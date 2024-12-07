@@ -1,0 +1,42 @@
+For Day 5 
+I skipped Day 8, 7 and 6 most of those tasks related to Reebor'g World and I simply could'nt wrap my head around Day 8.
+
+I will eventually go back and attempt it for the 5th or 6th time (lol) but for now, I will be proceeding with uploading pass challenges
+****************************************************************************************************************************************************************************************************
+import random
+from types import new_class
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to the PyPassword Generator!")
+nr_letters = int(input("How many letters would you like in your password?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+
+user_gen_pass = []
+
+for new_letters in range(nr_letters):
+    user_letters = random.choice(letters)
+    user_gen_pass.append(user_letters)
+    # print(user_letters)
+
+
+for new_symbols in range(nr_symbols):
+    user_symbols = random.choice(symbols)
+    user_gen_pass.append(user_symbols)
+    # print(user_symbols)
+
+for new_numbers in range(nr_numbers):
+    user_numbers = random.choice(numbers)
+    user_gen_pass.append(user_numbers)
+    # print(user_numbers)
+###################################################################
+
+I realise this is a bit long winded (Angela's code was far shorter than mine. you should have seen my face when she showed the solution and all that was needed was a copule sentences of code.
+
+for this, I attempted to break it down as much as possible so I could follow each step and figure out if each was printing the correct output (hence the constant prints() functions after each code.
+It helps me to pysically see the steps that are veing taken so that I can figure out if  I'm doing this correctly or not.
+
