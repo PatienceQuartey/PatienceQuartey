@@ -1,0 +1,96 @@
+Day 4 was probably the most confident I've felt during this course as although, once again, it was a lot longer than the solution Angela provided, 
+I felt proud of myself that my solution was al least as close as possible (I would say 90%) to the actual solution provided 
+***************************************************************************************************************************************************************************************************************************************
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+#ROCK WINS AGAINST SCISSORS
+#SCISSORS WINS AGAINST PAPER
+#PAPER WINS AGAINST ROCK
+#0 = ROCK
+#1 = PAPER
+#2 = SCISSORS
+# 0 WINS OVER 2
+# 2 WINS OVER 1
+# 1 WINS OVER 0
+#  0 = 0
+#  1 =1
+#  2 = 2
+# Pyhton starts at 0
+
+computer_choice = [rock, paper, scissors]
+computer_decide = random.randint(0, 2)
+
+
+print("Hello and Welcome to 'Rock, Paper, Scissors!!!!")
+rock_paper_scissors = int(input("What do you choose?, Type 0 for 'Rock, 1 for 'Paper' and 2 for 'Scissors'\n"))
+if rock_paper_scissors == 0:
+    print("You Chose: ")
+    print(rock)
+
+elif rock_paper_scissors == 1:
+    print("You Chose:")
+    print(paper)
+
+elif rock_paper_scissors == 2:
+    print("You Chose:")
+    print(scissors)
+
+else:
+    print("You inputted the wrong number. You Lose")
+
+
+if rock_paper_scissors == computer_decide:
+    print("Computer Chose:")
+    print(computer_choice[computer_decide])
+    print("It's a draw")
+
+
+elif rock_paper_scissors == 0 and computer_decide == 2:
+    print("Computer Chose:")
+    print(computer_choice[computer_decide])
+    print("You Win. Hooray!!!")
+
+
+elif rock_paper_scissors > computer_decide and rock_paper_scissors <3: 
+    print("Computer Chose:")
+    print(computer_choice[computer_decide])
+    print("You Win. Hooray!!!")
+
+elif rock_paper_scissors < computer_decide:
+    print("Computer Chose")
+    print(computer_choice[computer_decide])
+    print("You lose this round!")
+
+
+
+
+
+
