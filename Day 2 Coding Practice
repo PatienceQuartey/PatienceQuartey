@@ -1,0 +1,24 @@
+For Day 2, I were challenged to create a tip calculator - This is actually one that I will be coming back to and intend on modifying to make it better as I would love to use it as a base or inspiration for my project in the near future
+*****************************************************************************************************************************************************************************************************************************************************************
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10, 12 or 15 "))
+people = int(input("How many people to split the bill? "))
+
+tip_calculator = tip / 100
+tip_from_bill = bill * tip_calculator
+tip_with_bill = tip_from_bill + bill
+# pay_per_person = (tip_with_bill / people)
+# pay_per_person_0 = round(pay_per_person, 2)
+pay_per_person = round(tip_with_bill / people, 2)
+
+print(f"Each person will pay: ${pay_per_person}")
+
+
+
+# to multiply a number you have to
+#12% = 12 / 100 = 0.12
+# Best Practice is to calculate with 1.12 as '1' = amount inputted by user and 0.12 = the percentage -
+# i tired this but i simply couldn't understand it so will try the longer method
+
+
