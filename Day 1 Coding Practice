@@ -1,0 +1,11 @@
+This was the 1st challenge I worked on and it took me a long while to get to this, so iw as really proud of myself when Angela showed her solution and I reaalised I got it right
+
+looking back now, this would take me a few minutes to complete but at the time, I simply didn't think I was getting it right. shows that as time progresses, I am getting a hang of this stuff
+***************************************************************************************************************************************************************************************************************
+print("Hello and welcome to 'Band Generator")
+print("Let's get you a new Band Name!!!")
+city_name = input("What City did you grow up in?: ")
+pet_name = input("What's the name of your favourite pet?: ")
+print("The name of your band is" + " " + city_name + " " + pet_name + ".That's a great name!!!")
+******************************************************************************************************************************************************************************************************************
+
