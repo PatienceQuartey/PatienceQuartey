@@ -1,0 +1,44 @@
+For Day 9, I attempted to complete the Secret Auction Project.
+Unfortunately, I kinda failed it towards the ends but I', putting it on here to track my progress as I *hopefully* get better at this
+
+****************************************************************************************************************************************************************************************************************
+
+print("Welcome to Secret Auctions!!!")
+
+user_info = {}
+
+bids_continues = True
+
+while bids_continues is True:
+    user_name = input("What is your name?: ")
+    user_bid = int(input("What is your bid?: $"))
+
+    user_info[user_name] = user_bid
+
+    other_bids = input("Are there other bids? Type 'yes' if so and 'no' if there aren't others.\n").lower()
+
+    if other_bids == "yes":
+        bids_continues = True
+        print("\n" * 20)
+elif other_bids == "no":
+    bids_continues = False
+else:
+    break
+
+##########################################################################################################
+THIS IS WHERE I MESSED UP
+
+y = 0
+for x in user_info:
+    print(x)       #this prints the username - i need to be able to match the username to the right bid
+    print(user_info[x])
+    if y < user_info[x]:
+        y = user_info[x]
+
+
+print(f"The Winner is {x} with a bid of {y}")
+############################################################################################################
+my though process at the time was that if I could break it down and find the key individually from the value, this should produce my results.
+after racking my brain for over 2 hours trying to figure out how I'm not any closer to finding an answer, I looked at Angela's solution and realised that I overcomplicated this which set me back 😭
+
+
